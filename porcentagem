@@ -1,0 +1,142 @@
+Algoritmo "porcentagem"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 20/03/2024
+Var
+// Seção de Declarações das variáveis 
+ NUMERO: INTEIRO
+ RESULTADO1: INTEIRO
+ RESULTADO2: INTEIRO
+ RESULTADO3: INTEIRO
+ RESTO1: INTEIRO
+ RESTO2: INTEIRO
+ RESTO3: INTEIRO
+ N: INTEIRO
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+    ESCREVAL("DIGITE UM NUMERO")
+    LEIA(NUMERO)
+    SE NUMERO <= 999 ENTAO
+    
+       RESULTADO1 <- NUMERO \ 16
+
+       ESCREVAL("SEU RESULTADO FOI: ", RESULTADO1)
+       //RESULTADO2 <- RESULTADO2 \ 16
+       
+       //ESCREVAL("SEU RESULTADO2 FOI: ", RESULTADO2)
+
+       RESTO1 <- NUMERO % 16
+       ESCREVAL("SEU RESTO FOI: ", RESTO1)
+       
+       SE(RESULTADO1 > 0) ENTAO
+         RESTO2 <- RESULTADO1 \ 16
+         RESTO3 <- RESULTADO1 % 16
+
+         ESCREVAL("SEU RESTO FOI: ", RESTO3)
+    
+    SENAO
+
+         ESCREVAL("VALOR INVÁLIDO")
+    
+       FIMSE
+    FIMSE
+    
+    SE(RESTO2 < 10) ENTAO
+    ESCREVA(RESTO2)
+
+    SENAO
+      SE(RESTO2 < 11) ENTAO
+      ESCREVA("A")
+
+      SENAO
+        SE(RESTO2 < 12) ENTAO
+        ESCREVA("B")
+
+        SENAO
+          SE(RESTO2 < 13) ENTAO
+          ESCREVA("C")
+
+          SENAO
+            SE(RESTO2 < 14) ENTAO
+            ESCREVA("D")
+
+            SENAO
+              SE(RESTO2 < 15) ENTAO
+              ESCREVA("E")
+
+            SENAO(ESCREVA "F")
+
+              FIMSE
+            FIMSE
+          FIMSE
+        FIMSE
+      FIMSE
+    FIMSE
+    
+    
+    SE(RESTO3 < 10) ENTAO
+    ESCREVA(RESTO2)
+
+    SENAO
+      SE(RESTO3 < 11) ENTAO
+      ESCREVA("A")
+
+      SENAO
+        SE(RESTO3 < 12) ENTAO
+        ESCREVA("B")
+
+        SENAO
+          SE(RESTO3 < 13) ENTAO
+          ESCREVA("C")
+
+          SENAO
+            SE(RESTO3 < 14) ENTAO
+            ESCREVA("D")
+
+            SENAO
+              SE(RESTO3 < 15) ENTAO
+              ESCREVA("E")
+
+            SENAO(ESCREVA "F")
+
+              FIMSE
+            FIMSE
+          FIMSE
+        FIMSE
+      FIMSE
+    FIMSE
+
+     SE(RESTO1 < 10) ENTAO
+    ESCREVA(RESTO1)
+
+    SENAO
+      SE(RESTO1 < 11) ENTAO
+      ESCREVA("A")
+
+      SENAO
+        SE(RESTO1 < 12) ENTAO
+        ESCREVA("B")
+
+        SENAO
+          SE(RESTO1 < 13) ENTAO
+          ESCREVA("C")
+
+          SENAO
+            SE(RESTO1 < 14) ENTAO
+            ESCREVA("D")
+
+            SENAO
+              SE(RESTO1 < 15) ENTAO
+              ESCREVA("E")
+
+            SENAO(ESCREVA "F")
+
+              FIMSE
+            FIMSE
+          FIMSE
+        FIMSE
+      FIMSE
+    FIMSE
+Fimalgoritmo
